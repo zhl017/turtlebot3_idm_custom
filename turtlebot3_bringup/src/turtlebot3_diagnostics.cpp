@@ -22,7 +22,7 @@
 #include <sensor_msgs/MagneticField.h>
 #include <sensor_msgs/LaserScan.h>
 #include <diagnostic_msgs/DiagnosticArray.h>
-#include <turtlebot3_msgs/SensorState.h>
+#include <turtlebot3_msgs/SensorStateMecanum.h>
 #include <turtlebot3_msgs/VersionInfo.h>
 #include <string>
 
