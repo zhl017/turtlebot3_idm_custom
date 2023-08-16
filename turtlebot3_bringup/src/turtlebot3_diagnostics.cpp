@@ -22,7 +22,7 @@
 #include <sensor_msgs/MagneticField.h>
 #include <sensor_msgs/LaserScan.h>
 #include <diagnostic_msgs/DiagnosticArray.h>
-#include <turtlebot3_msgs/SensorState.h>
+#include <turtlebot3_msgs/SensorStateMecanum.h>
 #include <turtlebot3_msgs/VersionInfo.h>
 #include <string>
 
@@ -115,16 +115,16 @@ void LDSMsgCallback(const sensor_msgs::LaserScan::ConstPtr &msg)
   setLDSDiagnosis(diagnostic_msgs::DiagnosticStatus::OK, "Good Condition");
 }
 
-void sensorStateMsgCallback(const turtlebot3_msgs::SensorState::ConstPtr &msg)
+void sensorStateMsgCallback(const turtlebot3_msgs::SensorStateMecanum::ConstPtr &msg)
 {
   if (msg->battery > 11.0)
     setBatteryDiagnosis(diagnostic_msgs::DiagnosticStatus::OK, "Good Condition");
   else
     setBatteryDiagnosis(diagnostic_msgs::DiagnosticStatus::WARN, "Charge!!! Charge!!!");
 
-  if (msg->button == turtlebot3_msgs::SensorState::BUTTON0)
+  if (msg->button == turtlebot3_msgs::SensorStateMecanum::BUTTON0)
     setButtonDiagnosis(diagnostic_msgs::DiagnosticStatus::OK, "BUTTON 0 IS PUSHED");
-  else if (msg->button == turtlebot3_msgs::SensorState::BUTTON1)
+  else if (msg->button == turtlebot3_msgs::SensorStateMecanum::BUTTON1)
     setButtonDiagnosis(diagnostic_msgs::DiagnosticStatus::OK, "BUTTON 1 IS PUSHED");
   else
     setButtonDiagnosis(diagnostic_msgs::DiagnosticStatus::OK, "Pushed Nothing");
