@@ -1,5 +1,5 @@
 # TurtleBot3 Custom Project
-[Turtlebot3 Mecanum](https://github.com/zhl017/tree/mecanum-devel)
+[Turtlebot3 Mecanum](https://github.com/zhl017/turtlebot3_idm_custom/tree/mecanum-devel)
 
 # TurtleBot3
 <img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/turtlebot3/logo_turtlebot3.png" width="300">
