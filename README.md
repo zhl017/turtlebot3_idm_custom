@@ -65,9 +65,10 @@
     $ mkdir -p ~/caktin_ws/src
     $ cd ~/catkin_ws/src
     $ git clone -b mecanum-devel https://github.com/zhl017/turtlebot3_idm_custom
+    $ git clone https://github.com/zhl017/turtlebot3_msgs_idm_custom
+    $ git clone -b develop https://github.com/ROBOTIS-GIT/ld08_driver.git
     $ cd ~/catkin_ws/src/turtlebot3_idm_custom
     $ sudo rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
-    $ git clone https://github.com/zhl017/turtlebot3_msgs_idm_custom
     $ cd ~/catkin_ws && catkin_make -j1
     $ source ~/.bashrc
     ```
