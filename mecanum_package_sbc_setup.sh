@@ -19,6 +19,7 @@ mkdir -p $HOME/$name_catkin_workspace/src
 cd $HOME/$name_catkin_workspace/src
 git clone -b mecanum-devel https://github.com/zhl017/turtlebot3_idm_custom
 git clone https://github.com/zhl017/turtlebot3_msgs_idm_custom
+git clone -b develop https://github.com/ROBOTIS-GIT/ld08_driver.git
 cd $HOME/$name_catkin_workspace/src/turtlebot3_idm_custom
 sudo rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
 cd $HOME/$name_catkin_workspace
