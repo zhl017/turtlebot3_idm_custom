@@ -16,7 +16,17 @@
 
 - [3.1. PC Setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup)，目前僅於ROS Noetic版本運行，請於「[快速入門指南](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)」中上排工具列選擇「**Noetic分支**」進行安裝。
 
-- 更改步驟 [3.1.4. Install TurtleBot3 Packages](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#install-turtlebot3-packages)，輸入下方指令安裝相關ROS packages。**(需連接網路)**
+- 更改步驟 [3.1.4. Install TurtleBot3 Packages](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#install-turtlebot3-packages)，選擇下列方式安裝相關ROS packages。**(需連接網路)**
+
+  - 腳本安裝（package會安裝於catkin_ws底下）
+ 
+    ```
+    $ wget https://raw.githubusercontent.com/zhl017/turtlebot3_idm_custom/mecanum-devel/mecanum_package_pc_setup.sh
+    $ chmod +x mecanum_package_pc_setup.sh
+    $ ./mecanum_package_pc_setup.sh
+    ```
+
+  - 指令安裝 
     ```
     $ sudo apt remove ros-noetic-turltebot3-msgs
     $ sudo apt remove ros-noetic-turtlebot3
@@ -36,7 +46,18 @@
 
 - [3.2. SBC Setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup)，本裝置使用Raspberry Pi 4B（以下簡稱**SBC**）作為車體主機，目前僅於ROS Noetic版本運行，請於「[快速入門指南](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)」中上排工具列選擇「**Noetic分支**」進行安裝。
 
-- 安裝完映像檔後，遠端進入SBC並輸入下方指令安裝相關ROS packages。**(需連接網路)**
+- 安裝完映像檔後，遠端進入SBC並選擇下列方式安裝相關ROS packages。**(需連接網路)**
+
+  - 腳本安裝（package會安裝於catkin_ws底下）
+ 
+    ```
+    $ wget https://raw.githubusercontent.com/zhl017/turtlebot3_idm_custom/mecanum-devel/mecanum_package_sbc_setup.sh
+    $ chmod +x mecanum_package_sbc_setup.sh
+    $ ./mecanum_package_sbc_setup.sh
+    ```
+
+  - 指令安裝
+    
     ```
     $ sudo apt remove ros-noetic-turltebot3-msgs
     $ sudo apt remove ros-noetic-turtlebot3
