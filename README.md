@@ -16,7 +16,7 @@
 
 - [3.1. PC Setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup)，目前僅於ROS Noetic版本運行，請於「[快速入門指南](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)」中上排工具列選擇「**Noetic分支**」進行安裝。
 
-- 更改步驟 [3.1.4. Install TurtelBot3 Packages](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#install-turtlebot3-packages)，輸入下方指令安裝相關ROS packages。**(需連接網路)**
+- 更改步驟 [3.1.4. Install TurtleBot3 Packages](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#install-turtlebot3-packages)，輸入下方指令安裝相關ROS packages。**(需連接網路)**
     ```
     $ sudo apt remove ros-noetic-turltebot3-msgs
     $ sudo apt remove ros-noetic-turtlebot3
