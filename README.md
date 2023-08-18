@@ -202,7 +202,7 @@
     ```
     透過使用快捷鍵 ```alt+/``` 幫助您移動到文件最底部，並寫下下列訊息。
 
-    1.1 PC
+    - PC端
       ```
       export ROS_MASTER_URI=http://PC_IP:11311
       export ROS_HOSTNAME=PC_IP
@@ -212,7 +212,7 @@
       >export ROS_MATER_URI=http://10.1.10.2:11311  
       >export ROS_HOSTNAME=10.1.10.2
 
-    1.2 SBC
+    - SBC端
       ```
       export ROS_MASTER_URI=http://PC_IP:11311
       export ROS_HOSTNAME=SBC_IP
