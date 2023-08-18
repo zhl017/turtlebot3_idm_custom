@@ -1,9 +1,18 @@
 # TurtleBot3 Custom Project : TurtleBot3 Mecanum  
+<img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/turtlebot3/logo_turtlebot3.png" width="300">
 
-- 使用馬達
+## 規格
+- W210
 
-  - W210 : linear : 0.40 | angular : 2.0
-  - W350 : linear : 0.24 | angular : 1.2
+  - 使用馬達：XM430-W210-T
+  - 最大線性速度：0.40 m/s
+  - 最大角速度：1.76 rad/s
+
+- W350
+
+  - 使用馬達：XM430-W350-T
+  - 最大線性速度：0.24 m/s
+  - 最大角速度：1.05 rad/s
 
 ## 快速安裝手冊
 
