@@ -52,7 +52,7 @@
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
   ```
 
-- 選擇下列方式安裝FET ROS packages。**(需連接網路)**
+- 選擇下列方式安裝ROS packages。**(需連接網路)**
 
   - 腳本安裝（package會安裝於catkin_ws底下）
  
