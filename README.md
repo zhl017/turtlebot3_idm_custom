@@ -66,9 +66,7 @@
   - 腳本安裝（package會安裝於catkin_ws底下）
  
     ```
-    $ wget https://raw.githubusercontent.com/zhl017/omiyage/main/Setup_script/turtlebot3_mecanum/pc_setup.sh
-    $ chmod +x pc_setup.sh
-    $ ./pc_setup.sh
+    $ wget https://raw.githubusercontent.com/zhl017/omiyage/main/Setup_script/turtlebot3_mecanum/pc_setup.sh && chmod +x pc_setup.sh && ./pc_setup.sh && rm pc_setup.sh
     ```
 
   - 指令安裝 
