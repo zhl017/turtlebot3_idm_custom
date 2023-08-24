@@ -94,12 +94,10 @@
 
 - 開機後遠端進入SBC並選擇下列方式安裝相關ROS packages。**(需連接網路)**
 
-  - 腳本安裝（package會安裝於catkin_ws底下）
+  - 腳本安裝（package會安裝於catkin_ws/src底下，若想安裝在其他workspace，請使用指令安裝另外創立worksapce。）
  
     ```
-    $ wget https://raw.githubusercontent.com/zhl017/omiyage/main/Setup_script/turtlebot3_mecanum/sbc_setup.sh
-    $ chmod +x sbc_setup.sh
-    $ ./sbc_setup.sh
+    $ wget https://raw.githubusercontent.com/zhl017/omiyage/main/Setup_script/turtlebot3_mecanum/sbc_setup.sh && chmod +x sbc_setup.sh && ./sbc_setup.sh && rm sbc_setup.sh
     ```
 
   - 指令安裝
@@ -267,7 +265,7 @@
 - **Navigation**
 1. 於**PC端**，執行Navigation。
     ```
-    $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch
+    $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$(map_file_path)
     ```
   
 其他相關應用及更詳細解說請參閱 [官方電子手冊](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)。
