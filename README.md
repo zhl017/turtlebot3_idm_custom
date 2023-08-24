@@ -63,7 +63,7 @@
 
 - 選擇下列方式安裝ROS packages。**(需連接網路)**
 
-  - 腳本安裝（package會安裝於catkin_ws底下）
+  - 腳本安裝（package會安裝於catkin_ws/src底下，若想安裝在其他workspace，請使用指令安裝另外創立worksapce。）
  
     ```
     $ wget https://raw.githubusercontent.com/zhl017/omiyage/main/Setup_script/turtlebot3_mecanum/pc_setup.sh && chmod +x pc_setup.sh && ./pc_setup.sh && rm pc_setup.sh
