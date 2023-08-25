@@ -51,14 +51,7 @@
 - 安裝相關依賴ROS packages。**(需連接網路)**
 
   ```
-  $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
-  ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
-  ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
-  ros-noetic-rosserial-python ros-noetic-rosserial-client \
-  ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
-  ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
-  ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
-  ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
+  $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc ros-noetic-rgbd-launch ros-noetic-rosserial-arduino ros-noetic-rosserial-python ros-noetic-rosserial-client ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
   ```
 
 - 選擇下列方式安裝ROS packages。**(需連接網路)**
@@ -191,7 +184,7 @@
 
 2. 輸入想連接的wifi裝置與密碼，請參考[官方手冊](https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/#configure-the-wifi-network-setting-1)。
 
-3. 確認修改完畢後使用快捷鍵 ```ctrl+s``` 儲存以及快捷鍵 ```ctrl+x``` 離開。
+3. 確認修改完畢後使用快捷鍵 ```ctrl + s``` 儲存以及快捷鍵 ```ctrl + x``` 離開。
 
 4. 輸入指令重新載入配置。
     ```
@@ -207,20 +200,24 @@
     ```
     透過使用快捷鍵 ```alt+/``` 幫助您移動到文件最底部，並寫下下列訊息。
 
-    - PC端
+    - PC端加入下列參數
       ```
       export ROS_MASTER_URI=http://PC_IP:11311
       export ROS_HOSTNAME=PC_IP
+      export TURTLEBOT3_MODEL=mecanum
+      export MECANUM_TYPE=$(w210 or w350)
       ```
       >example.
       >PC_IP = 10.1.10.2  
       >export ROS_MATER_URI=http://10.1.10.2:11311  
       >export ROS_HOSTNAME=10.1.10.2
 
-    - SBC端
+    - SBC端加入下列參數
       ```
       export ROS_MASTER_URI=http://PC_IP:11311
       export ROS_HOSTNAME=SBC_IP
+      export TURTLEBOT3_MODEL=mecanum
+      export MECANUM_TYPE=$(w210 or w350)
       ```
       >example.
       >SBC_IP = 10.1.10.5  
@@ -261,6 +258,10 @@
     ```
     $ roslaunch turtlebot3_slam turtlebot3_slam.launch
     ```
+2. 於**PC端**，執行儲存地圖。
+   ```
+   $ rosrun map_server map_saver -f ~/map
+   ```
 
 - **Navigation**
 1. 於**PC端**，執行Navigation。
